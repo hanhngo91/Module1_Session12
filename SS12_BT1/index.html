@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng cửu chương</title>
+    <style>
+        .bangcuuchuong{
+            width: 1500px;
+            height: 700px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            width: 500px;
+            background-color: greenyellow;
+        }
+        .tungso{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let a ;
+        a = "<div class='bangcuuchuong'>"
+            a = a + "<div class='container'>"
+            for(let i = 2; i<=10;i++){
+                a= a+ "<div class='tungso'>";
+                for (j=1;j<=10;j++){
+                    a= a+"<div>" + i + " " + "x" + " " + j + " " + "=" + " " + i*j + '</div>'
+                }
+                a = a + "</div>"
+            }
+            a = a+"</div>"
+        a = a+ "</div>"
+        document.write(a);
+    </script>
+</body>
+</html>
